@@ -2,6 +2,7 @@ package com.stylingandroid.vizualiser;
 
 import android.Manifest;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.audiofx.Visualizer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +10,7 @@ import android.support.v7.widget.Toolbar;
 
 import com.stylingandroid.vizualiser.permissions.PermissionsActivity;
 import com.stylingandroid.vizualiser.permissions.PermissionsChecker;
+import com.stylingandroid.vizualiser.renderer.RendererFactory;
 
 public class MainActivity extends AppCompatActivity implements Visualizer.OnDataCaptureListener {
 
@@ -28,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements Visualizer.OnData
         setSupportActionBar(toolbar);
 
         waveformView = (WaveformView) findViewById(R.id.waveform_view);
+        RendererFactory rendererFactory = new RendererFactory();
+        waveformView.setRenderer(rendererFactory.createSimpleWaveformRenderer(Color.GREEN, Color.DKGRAY));
     }
 
     @Override
