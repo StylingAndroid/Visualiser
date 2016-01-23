@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity implements Visualizer.OnData
 
     private static final int CAPTURE_SIZE = 256;
     private static final int REQUEST_CODE = 0;
-    static final String[] PERMISSIONS = new String[]{Manifest.permission.RECORD_AUDIO};
+    static final String[] PERMISSIONS = new String[]{Manifest.permission.RECORD_AUDIO, Manifest.permission.MODIFY_AUDIO_SETTINGS};
 
     private Visualizer visualiser;
     private WaveformView waveformView;
