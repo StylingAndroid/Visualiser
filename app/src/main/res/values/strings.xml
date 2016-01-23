@@ -1,0 +1,8 @@
+<resources>
+  <string name="app_name">Vizualiser</string>
+  <string name="no_permissions">This app requires the Microphone permission to run.\n\nPlease grant this permission when prompted.</string>
+  <string name="settings">Settings</string>
+  <string name="help">Help</string>
+  <string name="string_help_text">The Record Audio permission is missing and Android requires this app to have this permission to be able to capture the current music stream. Although this gets displayed as the Microphone permission, this app does not capture microphone data, just the current audio playback\n\nTo grant this permission click on Settings, then Permissions and turn the Microphone permission on.\n\nThen click back twice to return to the app</string>
+  <string name="quit">Exit App</string>
+</resources>
