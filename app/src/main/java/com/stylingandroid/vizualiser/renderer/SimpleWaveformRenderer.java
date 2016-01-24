@@ -14,7 +14,7 @@ class SimpleWaveformRenderer implements WaveformRenderer {
     private final Paint foregroundPaint;
     private final Path waveformPath;
 
-    static SimpleWaveformRenderer newInstance(int backgroundColour, int foregroundColour) {
+    static SimpleWaveformRenderer newInstance(@ColorInt int backgroundColour, @ColorInt int foregroundColour) {
         Paint paint = new Paint();
         paint.setColor(foregroundColour);
         paint.setAntiAlias(true);
@@ -23,7 +23,7 @@ class SimpleWaveformRenderer implements WaveformRenderer {
         return new SimpleWaveformRenderer(backgroundColour, paint, waveformPath);
     }
 
-    SimpleWaveformRenderer(int backgroundColour, Paint foregroundPaint, Path waveformPath) {
+    SimpleWaveformRenderer(@ColorInt int backgroundColour, Paint foregroundPaint, Path waveformPath) {
         this.backgroundColour = backgroundColour;
         this.foregroundPaint = foregroundPaint;
         this.waveformPath = waveformPath;
